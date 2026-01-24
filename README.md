@@ -16,6 +16,7 @@
   <li>spoon (łyżka z zielonym nalotem)</li>
   <li>tissue (ozdobna chustka Sory)</li>
   <li>wet_cloth (mokra szmatka)</li>
+  <li>chasen (miotełka do speiniania matchy)</li>
 </ul>
 <b>Ogród</b>
 <ul>
