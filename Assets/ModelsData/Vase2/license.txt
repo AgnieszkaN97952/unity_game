@@ -1,0 +1,11 @@
+Model Information:
+* title:	Japan Porcelain Vase
+* source:	https://sketchfab.com/3d-models/japan-porcelain-vase-d480f96444364f7ab885cc2a80b268fa
+* author:	bilgehan.korkmaz (https://sketchfab.com/bilgehan.korkmaz)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Japan Porcelain Vase" (https://sketchfab.com/3d-models/japan-porcelain-vase-d480f96444364f7ab885cc2a80b268fa) by bilgehan.korkmaz (https://sketchfab.com/bilgehan.korkmaz) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
