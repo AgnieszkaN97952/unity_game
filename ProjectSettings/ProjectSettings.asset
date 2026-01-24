@@ -4,7 +4,7 @@
 PlayerSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 20
-  productGUID: 1f5d173a0ea1acd46b3495c99b585b15
+  productGUID: 348b2fdc1d9db294daf71727af9f0250
   AndroidProfiler: 0
   AndroidFilterTouchesWhenObscured: 0
   AndroidEnableSustainedPerformanceMode: 0
@@ -13,7 +13,7 @@ PlayerSettings:
   useOnDemandResources: 0
   accelerometerFrequency: 60
   companyName: DefaultCompany
-  productName: Gorzka Matcha
+  productName: My project
   defaultCursor: {fileID: 0}
   cursorHotspot: {x: 0, y: 0}
   m_SplashScreenBackgroundColor: {r: 0.13725491, g: 0.12156863, b: 0.1254902, a: 1}
@@ -705,9 +705,9 @@ PlayerSettings:
     m_VersionCode: 1
     m_VersionName: 
   apiCompatibilityLevel: 6
-  cloudProjectId: 656d97f9-1044-467c-9e9d-8aaa07343c3c
+  cloudProjectId: 0e5d6ae2-effb-401c-9bca-4518e317d417
   framebufferDepthMemorylessMode: 0
-  projectName: Gorzka Matcha
+  projectName: My project 2026-01-24_16-08-37
   organizationId: an97952
   cloudEnabled: 0
   enableNativePlatformBackendsForNewInputSystem: 0
