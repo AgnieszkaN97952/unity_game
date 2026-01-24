@@ -1,0 +1,11 @@
+Model Information:
+* title:	Stone Japanese Lantern
+* source:	https://sketchfab.com/3d-models/stone-japanese-lantern-6b475ce70edc4399b4364cc36afe3c9a
+* author:	magiccc (https://sketchfab.com/magiccc)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Stone Japanese Lantern" (https://sketchfab.com/3d-models/stone-japanese-lantern-6b475ce70edc4399b4364cc36afe3c9a) by magiccc (https://sketchfab.com/magiccc) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
