@@ -1,0 +1,11 @@
+Model Information:
+* title:	Kitchen Dresser
+* source:	https://sketchfab.com/3d-models/kitchen-dresser-cec9f1f712ae4d6193c5df4d85c0c011
+* author:	rjducats (https://sketchfab.com/rjducats)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Kitchen Dresser" (https://sketchfab.com/3d-models/kitchen-dresser-cec9f1f712ae4d6193c5df4d85c0c011) by rjducats (https://sketchfab.com/rjducats) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
