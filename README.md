@@ -71,7 +71,7 @@ Licznik: x/15
   <li>(dirty_sleeve) <b>Ubrudzony matchą rękaw Ryu</b> Matcha na rękawie. Albo ktoś był nieuważny, albo bardzo dokładny — jeszcze nie wiem co gorsze.</li>
   <li>(victim_phone) <b>Telefon Hiroshiego</b> Ostatnia wiadomość: „Uważaj na herbatę.” Szkoda, że nie posłuchał.</li>
   <li>(censer) <b>Kadzidło</b> Zapach intensywny. Albo ktoś chciał się wyciszyć, albo zagłuszyć coś mniej przyjemnego.</li>
-  <li>(receipt) <b>Paragon za trutkę na szczury</b> Zakup sprzed tygodnia. Szczury mają tu najwyraźniej bogate życie… albo ktoś liczył na prostsze rozwiązania.</li>
+  <li>(receipt) <b>Paragon za trutkę na szczury</b> Zakup sprzed tygodnia. Szczury mają tu najwyraźniej bogate życie… albo ktoś liczył na proste rozwiązanie problemu.</li>
   <li>(scroll) <b>Ozdobny zwój</b> „Śmierć jest częścią drogi.” Minimalizm, zen i bardzo zły timing.</li>
 </ul>
 
