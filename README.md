@@ -233,7 +233,7 @@ Aiko:
 <h3>Część 3: Wybrtanie winnego</h3>
 Ekran z wyborem postaci
 
-<h3>Część 4: Epilogi</h3>
+<h3>Epilogi</h3>
 
 <b>Ryu</b>
 Ryu został zabrany jeszcze tej samej nocy.
