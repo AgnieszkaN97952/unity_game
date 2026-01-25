@@ -42,6 +42,7 @@
 <h2>Scenariusz</h2>
 
 <h3>Intro</h3>
+<p>
 Nazywam się Kaito Mori.
 Kiedyś byłem częścią Yakuzy. Teraz rozwiązuję sprawy, których nikt inny nie chce dotykać.
 Nie planowałem tu przychodzić.
@@ -59,6 +60,7 @@ Nie jestem tu, żeby wymierzać sprawiedliwość.
 Jestem tu, żeby złożyć historię z rzeczy, które zostały na miejscu: przedmiotów, słów i ciszy między nimi.
 A nawet wtedy…
 nie będę pewien, czy wybiorę dobrze.
+</p>
 
 <h3>Część 1: Szukanie dowodów - Teksty do znalezionych dowodów</h3>
 Zadanie: Znajdź wszystkie dowody
@@ -98,6 +100,7 @@ Licznik: x/4
 <h4>Pokój herbaciany</h4>
 
 <b>Ryu</b>
+<p>
 (ochroniarz Hiroshiego, porucznik Yakuzy)
 Postawa: opanowany, twardy
 Kaito:
@@ -126,8 +129,10 @@ Kaito:
 Ryu:
   Hiroshi był konfliktem.
   *Ryu milknie.*
+</p>
 
 <b>Miko</b>
+<p>
 (asystentka Hiroshiego, organizowała ceremonię)
 Postawa: nerwowa, zmęczona
 Kaito:
@@ -165,10 +170,12 @@ Kaito:
 Miko:
   Wszystko brzmi konkretnie, kiedy ktoś nie żyje.
   *Bawi się palcami ze zdenerwowania*
+</p>
 
 <h4>Kuchnia</h4>
 
 <b>Sora</b>
+<p>
 (młody członek Yakuzy, adept Ryu)
 Postawa: pozornie spokojny, wewnętrznie napięty
 Kaito:
@@ -203,10 +210,12 @@ Kaito:
   Skąd wiesz?
 Sora:
   …bo byłem blisko.
+</p>
 
 <h4>Ogród</h4>
 
 <b>Aiko</b>
+<p>
 (córka ofiary, studentka botaniki)
 Postawa: smutna, spokojna
 Kaito:
@@ -229,6 +238,7 @@ Aiko:
   (Patrzy w stronę drzwi shōji.)
 Aiko:
   Ale nie życzyłam mu śmierci.
+</p>
 
 <h3>Część 3: Wybrtanie winnego</h3>
 Ekran z wyborem postaci
@@ -236,6 +246,7 @@ Ekran z wyborem postaci
 <h3>Epilogi</h3>
 
 <b>Ryu</b>
+<p>
 Ryu został zabrany jeszcze tej samej nocy.
 Oficjalnie — na „rozmowę”.
 Nieoficjalnie — nikt nie wraca z takich rozmów taki sam.
@@ -246,8 +257,10 @@ Nie ma na to odpowiedzi.
 Był zdolny.
 Był wystarczająco blisko.
 I był dokładnie takim człowiekiem, jakiego łatwo obarczyć winą.
+</p>
 
 <b>Miko</b>
+<p>
 Miko nigdy nie była częścią Yakuzy.
 Ale Yakuza i tak się nią zajęła.
 Zniknęła z miasta.
@@ -256,8 +269,10 @@ Jakby ktoś delikatnie wymazał ją z papieru.
 Czy asystentka była zdolna do morderstwa?
 Czy tylko do złych decyzji i milczenia w złym momencie?
 Nie wiem.
+</p>
 
 <b>Sora</b>
+<p>
 Yakuza nie lubi rozgłosu.
 Sprawy wewnętrzne załatwia szybko i po cichu.
 Sora zniknął kilka dni po ceremonii.
@@ -272,8 +287,10 @@ Zrobił to, bo wiedział, że Hiroshi nigdy się nie zgodzi.
 Yakuza wymierzyła sprawiedliwość po swojemu.
 Szybciej, niż zrobiłaby to policja.
 Brutalniej, niż ja bym chciał.
+</p>
 
 <b>Aiko</b>
+<p>
 Aiko została ocalona przed oficjalnym oskarżeniem.
 Nie przed konsekwencjami.
 Yakuza uznała ją za problem, który może wrócić.
@@ -281,3 +298,4 @@ Rozwiązania takich problemów nie zawsze są ostateczne — czasem są tylko wy
 Czy mogła stać za śmiercią ojca?
 Czy była tylko źródłem wiedzy, której ktoś użył?
 Tego już nikt nie sprawdzi.
+</p>
