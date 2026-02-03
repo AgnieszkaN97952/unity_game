@@ -7315,6 +7315,26 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 65440834709031676, guid: c6a19095e93f3f7458c25d3a054eec26,
+        type: 3}
+      propertyPath: m_Size.z
+      value: 0.4332725
+      objectReference: {fileID: 0}
+    - target: {fileID: 65440834709031676, guid: c6a19095e93f3f7458c25d3a054eec26,
+        type: 3}
+      propertyPath: m_Center.x
+      value: 2.5824738e-17
+      objectReference: {fileID: 0}
+    - target: {fileID: 65440834709031676, guid: c6a19095e93f3f7458c25d3a054eec26,
+        type: 3}
+      propertyPath: m_Center.z
+      value: 0.038032144
+      objectReference: {fileID: 0}
+    - target: {fileID: 65440834709031676, guid: c6a19095e93f3f7458c25d3a054eec26,
+        type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c6a19095e93f3f7458c25d3a054eec26, type: 3}
 --- !u!4 &518638239 stripped
@@ -10120,6 +10140,28 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 992093353}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1015659422 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 116876, guid: c6a19095e93f3f7458c25d3a054eec26,
+    type: 3}
+  m_PrefabInstance: {fileID: 518638238}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1015659423
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1015659422}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 87c4be7844b3c3640a87ab66aa85c521, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  targetSceneName: Kitchen
+  promptRoot: {fileID: 1345343419}
+  promptText: {fileID: 1345343421}
+  message: "Przejd\u017A do Kuchni [E]"
 --- !u!1 &1028072917 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1507121843075558377, guid: c2874ffcf20c0dc41a250ffab3d26570,
