@@ -1,26 +1,34 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
+
 
 public class ButtonBehavior : MonoBehaviour
 {
+    public static string ChosenKiller;
+
     public void RyuClicked()
     {
-        Debug.Log("Ryu is just blend");
+        ChosenKiller = "Ryu";
+        SceneManager.LoadScene("Epilog");
     }
 
     public void SoraClicked()
     {
-        Debug.Log("that's the killer");
+        ChosenKiller = "Sora";
+        SceneManager.LoadScene("Epilog");
     }
 
     public void AikoClicked()
     {
-        Debug.Log("daughter couldn't kill");
+        ChosenKiller = "Aiko";
+        SceneManager.LoadScene("Epilog");
     }
 
     public void MikoClicked()
     {
-        Debug.Log("she just thought it was a joke");
+        ChosenKiller = "Miko";
+        SceneManager.LoadScene("Epilog");
     }
 }
