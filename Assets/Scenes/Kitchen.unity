@@ -23851,7 +23851,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 500, y: 300}
+  m_SizeDelta: {x: 800, y: 300}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1412545441
 MonoBehaviour:
@@ -29967,8 +29967,8 @@ MonoBehaviour:
   targetSceneName: TeaRoom
   spawnPosition: {x: 6.487367, y: 1.65, z: 10.03566}
   spawnYaw: -120.802
-  promptRoot: {fileID: 0}
-  promptText: {fileID: 0}
+  promptRoot: {fileID: 1412545439}
+  promptText: {fileID: 1412545441}
   message: "Przejd\u017A do Pokoju Herbacianego [E]"
   doorSoundPath: Audio/DoorSound
   doorVolume: 0.5
@@ -35563,6 +35563,82 @@ Transform:
   m_Father: {fileID: 1740234559}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1621002733 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1529183771119194, guid: 4c37448c94f16ed4b975f083dc1d472e,
+    type: 3}
+  m_PrefabInstance: {fileID: 839378028}
+  m_PrefabAsset: {fileID: 0}
+--- !u!54 &1621002734
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1621002733}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!65 &1621002735
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1621002733}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.38080764, y: 1.0203034, z: 0.30080968}
+  m_Center: {x: 0.014816862, y: 0.5180834, z: -0.004516347}
+--- !u!114 &1621002736
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1621002733}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1a78a680379d1694cabaa9f455d8b319, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  lines:
+  - "Miko\r\n[asystentka Hiroshiego, organizowa\u0142a ceremoni\u0119]\nPostawa:
+    nerwowa, zm\u0119czona"
+  - "Kaito:\r\nTwoja chustka by\u0142a w kuchni."
+  - "Miko:\r\nOczywi\u015Bcie. Biega\u0142am ca\u0142y dzie\u0144.\r\nCeremonia to
+    chaos, tylko wygl\u0105da spokojnie."
+  - "Kaito:\r\nPude\u0142ko matchy by\u0142o otwarte."
+  - "Miko:\r\nBo je otworzy\u0142am.\r\nJak zawsze."
+  - "Kaito:\r\nA \u0142y\u017Cka z zielonym nalotem?"
+  - "Miko:\r\nNie wiem. Nie u\u017Cywa si\u0119 jej przy ceremonii.\r\nMo\u017Ce
+    kto\u015B j\u0105 wzi\u0105\u0142, bo\u2026 by\u0142o szybciej?\r"
+  - "Kaito:\r\nWidzia\u0142a\u015B wiadomo\u015B\u0107 na telefonie Hiroshiego?"
+  - 'Miko *ciszej*:
+
+    Tak.'
+  - "Kaito:\r\nDlaczego nic nie powiedzia\u0142a\u015B?"
+  - "Miko:\r\nBo ceremonia ju\u017C trwa\u0142a.\r\nBo my\u015Bla\u0142am, \u017Ce
+    to pewnie \u017Cart.\r\nBo nie chcia\u0142am, \u017Ceby\u2026 *urwa\u0142a*"
+  - "Kaito:\r\n\u017Beby co?"
+  - "Miko:\r\n\u017Beby Hiroshi znowu dosta\u0142 paranoi."
+  - "Kaito:\r\n\u201EUwa\u017Caj na herbat\u0119\u201D brzmi do\u015B\u0107 konkretnie."
+  - "Miko:\r\nWszystko brzmi konkretnie, kiedy kto\u015B nie \u017Cyje.\r\n*Bawi
+    si\u0119 palcami ze zdenerwowania*"
+  dialogueSceneSprite: {fileID: 21300000, guid: f932d81b0a33bbe4380193b1c6fcc603,
+    type: 3}
+  dialogueUI: {fileID: 44812822}
+  interactDistance: 2
+  interactHint: {fileID: 736399607}
+  hintText: "[E] Przes\u0142uchaj"
 --- !u!1001 &1624686115
 PrefabInstance:
   m_ObjectHideFlags: 0

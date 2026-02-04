@@ -742,7 +742,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a125d4141901b874db9b927ffe3f42a2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  collected: 0
   target: 15
   nextSceneName: WhoKilled
 --- !u!4 &592804962
@@ -1043,7 +1042,7 @@ Camera:
   near clip plane: 0.3
   far clip plane: 1000
   field of view: 60
-  orthographic: 0
+  orthographic: 1
   orthographic size: 5
   m_Depth: -1
   m_CullingMask:
@@ -1151,7 +1150,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 1.9439697, y: 38}
+  m_AnchoredPosition: {x: 1.9439697, y: 0}
   m_SizeDelta: {x: 1140, y: 600}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1692029465
