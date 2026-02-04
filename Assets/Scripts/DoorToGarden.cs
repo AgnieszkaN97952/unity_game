@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using UnityEngine.SceneManagement;
 using TMPro;
+using System.Collections;
 
 public class DoorToGarden : MonoBehaviour
 {
@@ -8,27 +9,62 @@ public class DoorToGarden : MonoBehaviour
     [SerializeField] private string targetSceneName = "Garden";
 
     [Header("Prompt UI (TMP Text)")]
-    [SerializeField] private GameObject promptRoot; // np. cały obiekt Text (żeby go włączać/wyłączać)
+    [SerializeField] private GameObject promptRoot;
     [SerializeField] private TMP_Text promptText;
     [SerializeField] private string message = "Przejdź [E]";
 
+    [Header("Sound (Resources)")]
+    [SerializeField] private string doorSoundPath = "Audio/DoorSound";
+    [SerializeField] private float doorVolume = 0.5f;
+
+    [Header("Delay")]
+    [SerializeField] private float loadDelay = 0.5f; // ⏱️ czekamy po dźwięku
+
     private bool playerInRange = false;
+    private bool isLoading = false;
+
+    private AudioClip doorSound;
 
     private void Awake()
     {
-        // Bezpiecznie ukryj prompt na starcie
         if (promptRoot != null) promptRoot.SetActive(false);
         if (promptText != null) promptText.text = message;
+
+        doorSound = Resources.Load<AudioClip>(doorSoundPath);
+
+        if (doorSound == null)
+            Debug.LogError($"DoorToGarden: Nie znaleziono dźwięku w Resources/{doorSoundPath}");
     }
 
     private void Update()
     {
-        if (!playerInRange) return;
+        if (!playerInRange || isLoading) return;
 
         if (Input.GetKeyDown(KeyCode.E))
         {
-            SceneManager.LoadScene(targetSceneName);
+            StartCoroutine(OpenDoorAndLoad());
         }
+    }
+
+    private IEnumerator OpenDoorAndLoad()
+    {
+        isLoading = true;
+
+        // 🔊 dźwięk
+        if (doorSound != null && Camera.main != null)
+        {
+            AudioSource.PlayClipAtPoint(
+                doorSound,
+                Camera.main.transform.position,
+                doorVolume
+            );
+        }
+
+        // ⏱️ poczekaj
+        yield return new WaitForSeconds(loadDelay);
+
+        // 🚪 zmień scenę
+        SceneManager.LoadScene(targetSceneName);
     }
 
     private void OnTriggerEnter(Collider other)

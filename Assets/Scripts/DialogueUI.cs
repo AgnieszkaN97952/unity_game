@@ -1,14 +1,26 @@
 ﻿using System.Collections;
 using UnityEngine;
 using TMPro;
+using UnityEngine.UI;
 
 public class DialogueUI : MonoBehaviour
 {
     [Header("UI")]
     public TextMeshProUGUI textComponent;
 
+    [Header("Scene Image (one PNG: background + character)")]
+    public Image sceneImage;              // podepnij DialogueSceneImage
+    [Range(0f, 1f)] public float sceneAlpha = 1f;
+
     [Header("Typing")]
     public float textSpeed = 0.05f;
+
+    [Header("Audio (typing loop)")]
+    public AudioSource dialogueSource;
+    [Range(0f, 1f)] public float dialogueVolume = 0.2f;
+
+    private AudioClip dialogueClip;
+    private const string DialogueClipPath = "Audio/DialogueSound";
 
     private string[] lines;
     private int index;
@@ -17,14 +29,26 @@ public class DialogueUI : MonoBehaviour
 
     void Awake()
     {
-        gameObject.SetActive(false); // na starcie ukryty
+        // ukryj na start
+        if (sceneImage != null)
+        {
+            sceneImage.enabled = false;
+            sceneImage.sprite = null;
+        }
+
+        if (dialogueSource == null)
+            dialogueSource = GetComponent<AudioSource>();
+
+        dialogueClip = Resources.Load<AudioClip>(DialogueClipPath);
+        StopTypingSound();
+
+        gameObject.SetActive(false);
     }
 
     void Update()
     {
         if (!isOpen) return;
 
-        // LPM przechodzi dalej / skipuje pisanie
         if (Input.GetMouseButtonDown(0))
         {
             if (textComponent.text == lines[index])
@@ -32,6 +56,16 @@ public class DialogueUI : MonoBehaviour
             else
                 SkipTyping();
         }
+    }
+
+    // ✅ NPC ustawia obrazek sceny PRZED startem dialogu
+    public void SetSceneSprite(Sprite sprite)
+    {
+        if (sceneImage == null) return;
+
+        sceneImage.sprite = sprite;
+        sceneImage.color = new Color(1f, 1f, 1f, sceneAlpha);
+        sceneImage.enabled = (sprite != null);
     }
 
     public void StartDialogue(string[] newLines)
@@ -57,11 +91,15 @@ public class DialogueUI : MonoBehaviour
     private IEnumerator TypeLine(string line)
     {
         textComponent.text = "";
+        StartTypingSound();
+
         foreach (char c in line)
         {
             textComponent.text += c;
             yield return new WaitForSeconds(textSpeed);
         }
+
+        StopTypingSound();
         typingRoutine = null;
     }
 
@@ -69,11 +107,15 @@ public class DialogueUI : MonoBehaviour
     {
         if (typingRoutine != null) StopCoroutine(typingRoutine);
         typingRoutine = null;
+
         textComponent.text = lines[index];
+        StopTypingSound();
     }
 
     private void NextLine()
     {
+        StopTypingSound();
+
         if (index < lines.Length - 1)
         {
             index++;
@@ -88,10 +130,38 @@ public class DialogueUI : MonoBehaviour
     public void Close()
     {
         isOpen = false;
+
         if (typingRoutine != null) StopCoroutine(typingRoutine);
         typingRoutine = null;
 
+        StopTypingSound();
+
+        // ✅ schowaj obraz po dialogu
+        if (sceneImage != null)
+        {
+            sceneImage.enabled = false;
+            sceneImage.sprite = null;
+        }
+
         gameObject.SetActive(false);
+    }
+
+    private void StartTypingSound()
+    {
+        if (dialogueSource == null || dialogueClip == null) return;
+
+        dialogueSource.loop = true;
+        dialogueSource.volume = dialogueVolume;
+        dialogueSource.clip = dialogueClip;
+
+        dialogueSource.Stop();
+        dialogueSource.Play();
+    }
+
+    private void StopTypingSound()
+    {
+        if (dialogueSource != null && dialogueSource.isPlaying)
+            dialogueSource.Stop();
     }
 
     public bool IsOpen() => isOpen;
